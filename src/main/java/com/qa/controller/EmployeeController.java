@@ -1,13 +1,20 @@
 package com.qa.controller;
 
 import com.qa.entity.Employee;
+import com.qa.utils.Utils;
 
 public class EmployeeController {
-	public EmployeeController() {
+	
+	private Utils utils;
+	public EmployeeController(Utils utils) {
 		super();
+		this.utils = utils;
 	}
 	
 	public Employee createEmployee() {
-		return new Employee();
+		Employee emp = new Employee();
+		System.out.println("Enter employee id");
+		emp.setEmployeeId(utils.getInt());
+		return emp;
 	}
 }
