@@ -11,10 +11,11 @@ public class SelfServicePortal {
 			EmployeeController employeeController = new EmployeeController(utils);
 			System.out.println("What would you like to do?");
 			System.out.println("1 - Create a new Employee");
-			System.out.println("0 - Exit");
+			System.out.println("0 - Logout");
 			int option = utils.getInt();
 			switch (option) {
 				case 0:
+					System.out.println("Successfully Logged out!");
 					stop = true;
 					break;
 				case 1:
