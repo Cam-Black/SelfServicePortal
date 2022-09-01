@@ -32,6 +32,7 @@ public class EmployeeController {
 			System.out.println("Enter employee's salary");
 			emp.setSalary(utils.getInt());
 		}
+		System.out.println(emp);
 		return emp;
 	}
 }
