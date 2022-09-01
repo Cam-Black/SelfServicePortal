@@ -1,4 +1,4 @@
-package com.qa.employee;
+package com.qa.entity;
 
 public class Employee {
 	private int employeeId;
