@@ -1,8 +1,8 @@
 package com.qa.entity;
 
 public class User {
-	String username;
-	String password;
+	String username = "user";
+	String password = "pword";
 	
 	public User() {
 		super();
